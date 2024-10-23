@@ -36,7 +36,7 @@ function App() {
   }
   return (
     <>
-      <Navbar title="Rural" about="About" mobile="Mobile" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="Rural" about="About"  mode={mode} toggleMode={toggleMode} />
       {/* <Navbar /> */}
       <Alert alert={alert}/>
       <div className="container">
