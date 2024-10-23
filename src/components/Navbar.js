@@ -19,7 +19,9 @@ export default function Navbar(props) {
                         <li className="nav-item">
                             <a className="nav-link" href="/">{props.about}</a>
                         </li>
-                      
+                        <li className="nav-item">
+                            <a className="nav-link" href="/">{props.mobile}</a>
+                        </li>
                     </ul>
                     {/* <form className="d-flex" role="search">
                         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
