@@ -34,8 +34,7 @@ export default function Navbar(props) {
                         <li className="nav-item">
                             <a className="nav-link" href="/">{props.about}</a>
                         </li>
-<<<<<<<<< Temporary merge branch 1
-=========
+
                         <li className="nav-item">
                             <a className="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
