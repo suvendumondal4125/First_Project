@@ -39,7 +39,7 @@ export default function About() {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              Accordion Item #10
+              Accordion Item #1
             </button>
           </h2>
           <div
@@ -70,7 +70,7 @@ export default function About() {
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              Accordion Item #20
+              Accordion Item #2
             </button>
           </h2>
           <div
@@ -101,7 +101,7 @@ export default function About() {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Accordion Item #30
+              Accordion Item #3
             </button>
           </h2>
           <div
