@@ -5,13 +5,14 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Arert";
-import React from 'react';
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route,
+  Routes,
+  // Link
+} from "react-router-dom";
 
 
 
@@ -44,14 +45,18 @@ function App() {
   }
   return (
     <>
-
-      <Navbar title="Rural" about="About" mode={mode} toggleMode={toggleMode} />
-      {/* <Navbar /> */}
+    <Router>
+      <Navbar title="Latter" about="About Us" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
-      <div className="container">
-        <TextForm headding="Enter the text" mode={mode} />
-        <About />
+      <div className="container my-3">
+        <Routes>
+          <Route exact path="/" element={<TextForm heading="Enter the text" mode={mode} />} />
+          <Route exact path="/about" element={<About />} />
+        </Routes>
       </div>
+    </Router>
+
+
 
     </>
   );
