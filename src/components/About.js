@@ -102,7 +102,7 @@ export default function About() {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Accordion Item #3
+              Accordion Item #3234567
             </button>
           </h2>
           <div
