@@ -24,7 +24,6 @@ export default function About() {
       setBtnText("Enable Dark Mode");
     }
   };
-
   return (
     <div className="container" style={myStyle}>
       <h1 className="my-3">About Us</h1>
