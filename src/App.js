@@ -45,11 +45,13 @@ function App() {
   return (
     <>
 
-    <Navbar title="Rural" mode={mode} toggleMode={toggleMode}/>
-    <Alert/>
-  
-    <TextForm headding="Enter the text" mode={mode}/>
-
+      <Navbar title="Rural" about="About" mode={mode} toggleMode={toggleMode} />
+      {/* <Navbar /> */}
+      <Alert alert={alert} />
+      <div className="container">
+        <TextForm headding="Enter the text" mode={mode} />
+        <About />
+      </div>
 
     </>
   );
