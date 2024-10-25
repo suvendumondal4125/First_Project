@@ -32,28 +32,11 @@ export default function TextForm(props) {
         let newText = inputText
             .replace(/\s+/g, " ")
             .toLowerCase()
-<<<<<<< HEAD
-            .replace(/\b\w/g, char => char.toUpperCase());
-=======
             .replace(/\b\w/g, (char) => char.toUpperCase());
->>>>>>> suvendu
 
         setText(newText);
     };
 
-<<<<<<< HEAD
-
-
-    const [text, setText] = useState('Enter text here');
-
-    return (
-        <>
-            <div className="container" style={{ backgroundColor: props.mode === 'dark' ? 'white' : 'black' }}>
-                <h1>{props.headding}</h1>
-                {/* style={{backgroundColor: props.mode === 'dark'?'gray':'white',color: props.mode === 'dark'?'gray':'white'}} */}
-                <div className="mb-3">
-                    <textarea className="form-control" id="myBox" onChange={handleOnChange} value={text} rows="8"></textarea>
-=======
     const [text, setText] = useState("Enter text here");
 
     return (
@@ -75,7 +58,6 @@ export default function TextForm(props) {
                         value={text}
                         rows="8"
                     ></textarea>
->>>>>>> suvendu
                 </div>
                 <button className="btn btn-primary mx-2" onClick={handleUpClick}>
                     Convart to Uppercase
@@ -94,9 +76,6 @@ export default function TextForm(props) {
                 </button>
             </div>
 
-<<<<<<< HEAD
-            <div className="container my-3" style={{ backgroundColor: props.mode === 'dark' ? 'white' : 'black' }}>
-=======
             <div
                 className="container my-3 mx-3"
                 style={{
@@ -104,7 +83,6 @@ export default function TextForm(props) {
                     color: props.mode === 'dark' ? 'white' : ''
                 }}
             >
->>>>>>> suvendu
                 <h1>Your text summary</h1>
                 <p>
                     {
